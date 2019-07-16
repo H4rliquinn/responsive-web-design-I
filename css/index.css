@@ -1,3 +1,252 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+body{
+ margin: auto;
+ width:900px;
+}
+
+nav{
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	margin-top:30px;
+}
+
+nav a{
+	text-decoration: none;
+	color:grey;
+	margin:0px 25px;
+}
+
+nav .navBar{
+	width:70%;
+}
+
+h1{
+	font-size:65px;
+	font-weight:bold;
+}
+
+h2{
+	font-size:20px;
+	font-weight:bold;
+	font-style: italic;
+}
 
 
+
+.topContent{
+	margin-top:50px;
+	display:flex;
+}
+
+.topLeftContent{
+
+	width: 60%;
+	vertical-align: top;
+	text-align:center;
+	margin-top:50px;
+}
+
+.startButton{
+	width:170px;
+	border:1px solid black;
+	margin:20px auto;
+	font-size: 20px;
+	padding: 10px auto;
+}
+.middleContent{
+	border-top:1px solid black;
+	margin:40px 0px;
+	display:flex;
+}
+.middleContent div{
+	margin:20px 20px 0px 0px;
+}
+
+.middle-img{
+	margin:0px 9px;
+}
+
+.bottomContent {
+	display:flex;
+}
+.bottomContent div{
+	margin:20px 20px 20px 0px;
+}
+
+div p{
+	margin:20px 0px;
+}
+
+.addy{
+	display:flex;
+	flex-direction:column;
+	border-top: 1px solid black;
+    padding-top:20px;
+    width:90%;
+}
+
+
+.addy a{
+	margin:20px 0px  0px  0px;
+	text-decoration: none;
+	color:black;
+}
+
+.copy{
+	width:90%;
+	text-align: center;
+	margin-top:50px;
+}
+
+@media only screen and (max-width: 800px) {
+    body{
+        width:100%;
+        margin: auto;   
+       }
+    .navImg{
+        order:1;
+    }
+    nav{
+        flex-flow:column nowrap;
+        width:100%;
+    }
+    
+	nav .navBar{
+        order:2;
+        display:flex;
+        justify-content: space-between;
+        width:90%;
+        margin:20px auto 0px;
+    }
+    .topLeftContent{
+        justify-content:center;
+        width:100%;
+        margin:0px;
+    }
+
+    .snippet{
+        display:none;
+    }
+    .middle-img{
+        width:100%;
+        margin:0px auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body{
+        margin: auto;
+        width:100%;
+       }
+       nav{
+        flex-flow:column nowrap;
+        width:100%;
+    }
+    nav .navBar{
+        width:100%;
+        display:flex;
+        flex-flow:column nowrap;
+    }
+    .navBar a{
+        margin:0px;
+        width:100%;
+        font-size:16px; 
+        border-top:1px solid grey;
+        align-content:center;
+        padding-top:15px;
+        display:flex;
+        justify-content: center;
+        height:50px;
+
+    }
+    .navBar a:last-child{
+        border-bottom: 1px solid grey;
+    }
+    .middleContent{
+        width:90%;
+        flex-flow: column nowrap;
+        justify-content: center;
+        margin-left:20px;
+    }
+    .middle-img{
+        margin-left:20px;
+        width:90%;
+    }
+    .bottomContent{
+        width:90%;
+        flex-flow: column nowrap;
+        align-content: center;
+        margin-left:20px;
+    }
+    .addy{
+        margin-left:20px;       
+    }
+}

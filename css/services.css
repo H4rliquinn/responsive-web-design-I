@@ -1,0 +1,162 @@
+/* @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  } */
+
+.services-header-img{
+	margin-top:20px;
+}
+
+.pageTitle{
+    margin-bottom:20px;
+    border-bottom:1px solid black;
+    padding:20px 0px 30px 0px;
+}
+h2{
+    font-size: 22px;
+}
+
+h3{
+    font-size:14px;
+}
+main{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+
+}
+
+main div{
+    border:1px solid black;
+    background:lightgray;
+    width: 48%;
+    margin:15px 0px;
+    padding:15px 15px;
+}
+
+
+.learnButton{
+    width:110px; 
+    height:30px;  
+    border:1px solid black;
+    border-radius: 5px;
+	font:12px bold;
+    background:white;
+    text-align:center;
+    vertical-align:center;
+}
+
+
+
+.facts{
+    margin-top:15px;
+    border-top:2px solid black;
+    display:flex;
+    justify-content:space-between;
+}
+
+.factInfo{
+    width:40%;
+    margin:30px 0px ;
+}
+
+.factPic{
+    margin:30px 0px ;
+}
+
+ul{
+   list-style:square; 
+   list-style-position:inside;
+
+}
+
+li{
+    margin-top:10px;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+    body{
+        width:100%;
+        margin: auto; 
+       }
+    .navImg{
+        order:1;
+    }
+    nav{
+        flex-flow:column nowrap;
+        width:100%;
+    }
+    
+	nav .navBar{
+        order:2;
+        display:flex;
+        justify-content: space-between;
+        width:90%;
+        margin:20px auto 0px;
+    }
+
+    .services-header-img{
+        width:100%;
+        margin:0px auto;
+    }
+
+    main div{
+        width: 48%;
+        margin:15px 0px;
+        padding:15px 15px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body{
+        margin: auto;
+        width:100%;
+       }
+       nav{
+        flex-flow:column nowrap;
+        width:100%;
+    }
+    nav .navBar{
+        width:100%;
+        display:flex;
+        flex-flow:column nowrap;
+    }
+    .navBar a{
+        margin:0px;
+        width:100%;
+        font-size:16px; 
+        border-top:1px solid grey;
+        align-content:center;
+        padding-top:15px;
+        display:flex;
+        justify-content: center;
+        height:50px;
+
+    }
+    .navBar a:last-child{
+        border-bottom: 1px solid grey;
+    }
+
+    main{
+        flex-flow:column nowrap;
+    }
+    main div{
+        width:90%;
+        margin:0px auto;
+
+    }
+    .facts{
+        flex-flow:column nowrap;
+    }
+    .factInfo{
+        width:90%;
+        margin:20px auto;
+    }
+    .factPic{
+        margin:0px auto;
+    }
+}
